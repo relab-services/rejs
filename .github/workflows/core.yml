@@ -3,6 +3,7 @@ name: rejs (development channel)
 on:
   push:
     branches:
+      - master
       - development
     paths:
       - packages/rejs/**
