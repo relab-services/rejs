@@ -1,4 +1,4 @@
-name: rejs (development channel)
+name: @relab/rejs-swagger
 
 on:
   push:
