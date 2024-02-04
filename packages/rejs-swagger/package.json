@@ -1,0 +1,66 @@
+{
+  "name": "@relab/rejs-swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*.*"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepack": "npm run build",
+    "lint": "eslint . --ext ts,tsx",
+    "format": "prettier --write \"**/*.ts*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/relab-services/rejs.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "swagger"
+  ],
+  "author": "Sergey Zwezdin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/relab-services/rejs/issues"
+  },
+  "homepage": "https://github.com/relab-services/rejs#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-json": "6.1.0",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-terser": "0.4.4",
+    "@rollup/plugin-typescript": "11.1.6",
+    "@sergeyzwezdin/eslint-config": "2.2.1",
+    "@sergeyzwezdin/prettier-config": "1.1.1",
+    "rollup": "4.9.6",
+    "rollup-plugin-delete": "2.0.0",
+    "rollup-plugin-dts": "6.1.0",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "semantic-release-telegram-bot": "2.0.1",
+    "tslib": "2.6.2"
+  },
+  "peerDependencies": {
+    "@asteasolutions/zod-to-openapi": "^6.0.0",
+    "@types/express": "^4.0.0",
+    "@types/swagger-ui-dist": "^3.0.0",
+    "express": "^4.0.0",
+    "swagger-ui-dist": "^5.0.0",
+    "typescript": "^4.0.0 || ^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "prettier": "@sergeyzwezdin/prettier-config",
+  "eslintConfig": {
+    "extends": "@sergeyzwezdin/eslint-config/node"
+  }
+}
