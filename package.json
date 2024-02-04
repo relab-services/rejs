@@ -1,0 +1,7 @@
+{
+  "name": "rejs",
+  "workspaces": [
+    "packages/rejs",
+    "packages/rejs-swagger"
+  ]
+}
