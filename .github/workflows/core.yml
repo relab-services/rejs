@@ -1,4 +1,4 @@
-name: @relab/rejs
+name: "@relab/rejs"
 
 on:
   push:

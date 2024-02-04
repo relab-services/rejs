@@ -1,4 +1,4 @@
-name: @relab/rejs-swagger
+name: "@relab/rejs-swagger"
 
 on:
   push:
