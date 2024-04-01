@@ -1,7 +1,7 @@
 {
   "name": "@relab/rejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "re.js is a framework built on top of Express that facilitates the development of API endpoints using the capabilities of Typescript and Zod.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
