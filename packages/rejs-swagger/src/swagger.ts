@@ -16,6 +16,10 @@ export const swagger: (options?: SwaggerOptions) => Middleware = options => conf
         if (request.path === swaggerPath) {
             const registry = new OpenAPIRegistry()
 
+            if (options?.configure) {
+                options.configure(registry)
+            }
+
             register(
                 registry,
                 configuration.prefix,

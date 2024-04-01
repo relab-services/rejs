@@ -1,3 +1,4 @@
+import { OpenAPIRegistry } from '@asteasolutions/zod-to-openapi'
 import { OpenAPIObjectConfig } from '@asteasolutions/zod-to-openapi/dist/v3.0/openapi-generator'
 import { UrlSchema } from '@relab/rejs'
 
@@ -6,7 +7,8 @@ export type SwaggerOptions = {
     version?: string
     title?: string
     description?: string
-    options?: OpenAPIObjectConfig
+    configure?: (registry: OpenAPIRegistry) => void
+    options?: Partial<OpenAPIObjectConfig>
     ui?:
         | {
               enabled: true
