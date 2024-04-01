@@ -32,6 +32,7 @@ export const swagger: (options?: SwaggerOptions) => Middleware = options => conf
                 .status(200)
                 .send(
                     generator.generateDocument({
+                        ...(options?.options ?? {}),
                         openapi: '3.0.0',
                         info: {
                             version: options?.version ?? '',
