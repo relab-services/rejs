@@ -38,6 +38,7 @@ export type Route<
             response?: string
             deprecated?: boolean
             tags?: string[]
+            security?: string[]
         }
     }
     setup: RouteSetupHandler

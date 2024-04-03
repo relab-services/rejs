@@ -15,7 +15,7 @@ export const register = (
         if (isRoute(item)) {
             const { metadata } = item
 
-            const { response: responseDescription, ...description } = metadata.metadata ?? {}
+            const { response: responseDescription, security, ...description } = metadata.metadata ?? {}
 
             const responses: Record<number, ResponseConfig> = {}
             const mimeTypes = Array.from(new Set([formatter.default.mimeType, ...Object.values(formatter.formatters).map(({ mimeType }) => mimeType)]))
@@ -64,6 +64,7 @@ export const register = (
                         : undefined,
                     query: metadata.schema.query,
                 },
+                security: security?.reduce<Record<string, string[]>[]>((result, current) => [...result, { [current]: [] }], []),
 
                 responses,
             })
