@@ -65,6 +65,7 @@ export const route = <
         response?: string
         deprecated?: boolean
         tags?: string[]
+        security?: string[]
     }
 }): ((handler: (request: HandlerParameter, context: RequestContext) => HandlerResult) => {
     metadata: {
@@ -78,6 +79,7 @@ export const route = <
             response?: string
             deprecated?: boolean
             tags?: string[]
+            security?: string[]
         }
     }
     setup: RouteSetupHandler
