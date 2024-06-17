@@ -1,3 +1,7 @@
+⚠️ Deprecated in favour of [fastify-kit](https://github.com/relab-services/dev-kit/tree/master/packages/fastify/fastify-kit).
+
+⚠️ Do not use it in produciton.
+
 # re.js
 
 **re.js** is a framework built on top of Express that facilitates the development of API endpoints using the capabilities of Typescript and Zod.
